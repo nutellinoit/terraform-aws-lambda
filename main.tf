@@ -63,7 +63,7 @@ resource "aws_lambda_function" "lambda" {
   runtime = "nodejs6.10"
   timeout = 20
 
-  tags = "${merge(map("Name", ${var.name}), map("Version", var.lambda_version) ,var.tags_as_map)}"
+  tags = "${merge(map("Name", "${var.name}"), map("Version", var.lambda_version) ,var.tags_as_map)}"
 
   environment {
     variables = {
