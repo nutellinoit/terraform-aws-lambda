@@ -9,7 +9,7 @@ Use like this:
 ```
 module "lambda-skeleton"{
   source = "git::https://github.com/nutellinoit/terraform-aws-lambda-skeleton.git?ref=master"
-  lambda_version = "1"
+  lambda_version = "1" # change this value to trigger another deploy
   name = "CoolLambda"
   environment_1 = "1"
   environment_2 = "2"
